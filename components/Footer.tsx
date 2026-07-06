@@ -39,7 +39,7 @@ export function Footer() {
               Open to internships, backend collabs, and problems that don't have a Stack Overflow answer.
             </p>
             <a 
-              href="mailto:your@email.com" 
+              href="mailto:amanwork.co.in@email.com" 
               className="group relative inline-flex items-center justify-center overflow-hidden rounded-full border border-white/20 bg-white/5 px-8 py-4 text-sm font-bold uppercase text-white backdrop-blur-md transition-all hover:bg-white hover:text-black hover:border-white shadow-[0_0_0_rgba(249,115,22,0)] hover:shadow-[0_0_30px_rgba(249,115,22,0.4)]"
             >
               <span className="relative z-10 flex items-center gap-2">Say Hello <ArrowUpRight className="h-4 w-4 transition-transform group-hover:rotate-45" /></span>
