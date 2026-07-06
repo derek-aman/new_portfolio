@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: black;
+  scroll-behavior: smooth;
+  overflow-x: clip; 
+  cursor: none; /* Hide default cursor */
+}
+
+/* Custom Selection */
+::selection {
+  background-color: #f97316; /* Orange-500 */
+  color: #ffffff;
+}
+
+/* Custom Thin Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #1f2937;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f97316;
+}
+
+a, button {
+  cursor: none;
+}
+
+@layer utilities {
+  .text-stroke-white {
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.8);
+  }
+  .text-stroke-blue {
+    -webkit-text-stroke-color: #00f0ff; /* Glowing Neon Cyan */
+  }
+  .text-stroke-orange {
+    -webkit-text-stroke-color: #ff3e00; /* Deep Neon Orange */
+  }
+  .text-stroke-2 {
+    -webkit-text-stroke-width: 2px;
+  }
+  .text-stroke-4 {
+    -webkit-text-stroke-width: 4px;
+  }
+  .text-stroke-6 {
+    -webkit-text-stroke-width: 6px;
+  }
+  /* Glassmorphism */
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+}
